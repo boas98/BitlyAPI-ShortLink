@@ -1,0 +1,13 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.btn-warning {
+	color:#fff;
+	background-color:#f0ad4e;
+	border-color:#eea236
+}
