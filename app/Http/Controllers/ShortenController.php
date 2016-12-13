@@ -26,7 +26,7 @@ class ShortenController extends Controller
     	$url = env('API_URL');
     	$curl = new \Curl\Curl();
 
-    	$curl->get($url.'v3/shorten', array(
+    	$curl->get('http://api-ssl.bitly.com/v3/shorten', array(
     		'login' => env('API_LOGIN'),
     		'apiKey' => env('API_KEY'),
     		'longUrl' => $shorten,
