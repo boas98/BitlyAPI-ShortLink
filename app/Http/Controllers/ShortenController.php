@@ -27,8 +27,8 @@ class ShortenController extends Controller
     	$curl = new \Curl\Curl();
 
     	$curl->get('http://api-ssl.bitly.com/v3/shorten', array(
-    		'login' => env('API_LOGIN'),
-    		'apiKey' => env('API_KEY'),
+    		'login' => 'boas17'),
+    		'apiKey' => ('R_3ff54f81f6424e25ae2b2ec966098ae8'),
     		'longUrl' => $shorten,
     		'format' => 'json'
     	));
