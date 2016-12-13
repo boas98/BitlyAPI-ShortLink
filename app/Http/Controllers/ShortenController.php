@@ -41,6 +41,8 @@ class ShortenController extends Controller
     		$json = json_decode($curl->response);
     	}
 
+      dd($json);
+
     	$url = $json->data->url;
     	\Session::put('url', $url);
     	return view('shorten');
